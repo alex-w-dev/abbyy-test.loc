@@ -1,0 +1,13 @@
+<div class="c-books">
+  <div class="c-books-menu c-books-container">
+    <div class="c-book-menu-title">Authors:</div>
+    <div class="c-books-menu-list"  *ngIf="authors.length">
+      <div class="c-books-menu-list-item" *ngFor="let author of authors">
+        <a routerLink="./{{author.alias}}" routerLinkActive="active"  class="button">{{author.name}}</a>
+      </div>
+    </div>
+  </div>
+  <div class="c-books-list c-books-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

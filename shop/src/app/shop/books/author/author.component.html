@@ -1,0 +1,29 @@
+
+<h2>
+  {{alias}}'s books:
+</h2>
+
+<!-- there can be one of books info -->
+<router-outlet></router-outlet>
+
+<div class="books-list" *ngIf="books.length">
+  <div class="book" *ngFor="let book of books">
+    <div *ngIf="book.img" class="book-img">
+      <img src="/img/{{book.img}}" alt="">
+    </div>
+    <div class="book-title" >
+      {{book.title}}
+    </div>
+    <div class="book-pages" >
+      {{book.pages}} page{{(book.pages!=1)?'s':''}}
+    </div>
+    <div class="book-count" >
+      <div class="book-count__count">
+        Coutn: {{book.count}}
+      </div>
+      <div class="book-count__button button"  *ngIf="+book.count > 0"  (click)="takeFree(book)" >
+        Take free
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+h2{
+    margin: 0px;
+    color: #999;
+    font-weight: normal;
+}
+.books-list{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.book{
+    display: inline-flex;
+    width: calc(33.3333% - 30px);
+    flex-direction: column;
+    padding: 0px 15px;
+    margin-bottom:  30px;
+}
+.book-img{
+    display:flex;
+    align-items: center;
+    height: 200px;
+
+}
+.book-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.book-title{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.book-pages{
+    margin-top: 10px;
+    color: #999999;
+}
+.book-count{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.book-count__count{}
+.book-count__button{
+
+}

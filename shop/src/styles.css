@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    padding-top: 20px;
+}
+nav{
+    display: flex;
+    border-bottom: 1px solid #5eb4ff;
+    padding-bottom: 10px;
+
+}
+nav a{
+    margin-right: 10px;
+}
+
+.button{
+    display: inline-flex;
+    height: 30px;
+    background: #5eb4ff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+}
+.button.active{
+    background: #519bdb;
+}

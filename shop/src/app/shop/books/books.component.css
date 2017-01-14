@@ -1,0 +1,35 @@
+.c-books{
+    display: flex;
+}
+.c-books-container{
+}
+.c-books-menu{
+    width: 25%;
+}
+.c-books-menu-list{
+    display: flex;
+    flex-direction: column;
+}
+.c-books-menu-list-item{
+    margin-bottom: 10px;
+}
+.c-books-menu-list-item .button{
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    background-color: #3cd234;
+}
+
+.c-books-menu-list-item .button.active{
+    background-color: #38bc31;
+}
+
+.c-books-list{
+    padding: 0px 30px;
+    width: 75%;
+
+}
+.c-book-menu-title{
+    color: #999;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
